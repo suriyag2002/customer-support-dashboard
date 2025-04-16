@@ -4,3 +4,8 @@ python-dotenv
 groq
 mysql-connector-python
 gunicorn
+streamlit==1.14.0
+pandas
+requests
+plotly
+Pillow

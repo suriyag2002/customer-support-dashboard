@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: customer-support-ai
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    autoDeploy: true
+
+    envVars:
+      - key: DB_HOST
+        value: 104.237.2.219
+      - key: DB_PORT
+        value: 5340
+      - key: DB_USER
+        value: mysqluser
+      - key: DB_PASSWORD
+        value: "*7E567C9DC06217268D72D52BABCA14EAB8993ACF"
+      - key: DB_NAME
+        value: customer_support
+      - key: key
+        value: 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

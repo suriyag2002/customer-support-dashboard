@@ -9,3 +9,4 @@ pandas
 requests
 plotly
 Pillow
+altair==5.5.0

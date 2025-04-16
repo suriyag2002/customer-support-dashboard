@@ -7,6 +7,10 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)  
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({"message": "Welcome to the Customer Support Dashboard API!"})
+
 @app.route('/tickets', methods=['GET'])
 def get_tickets():
     conn = get_db_connection()
